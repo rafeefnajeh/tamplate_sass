@@ -1,0 +1,156 @@
+
+
+.slider {
+  margin:30px;
+  blockquote {
+
+    font: {
+      size: 20px;
+      style: italic;
+      weight: bold;
+      family: Tahoma;
+    }
+    width: 80%;
+    margin: 30px auto;
+    line-height: 1.7;
+    color: #5e5e5e;
+    text-align: center;
+  }
+  img {
+    max-width: 100%;
+  }
+  .bullets{
+    text-align: center;
+    li{
+      display: inline-block;
+      width:15px;
+      height:15px;
+      background-color: $gryColor;
+      border:2px solid $gryColor;
+      border-radius: 50%;
+      cursor: pointer;
+
+      &.active,
+      &:hover{
+        border:2px solid #333;
+        background-color: #fff;
+      }
+    }
+  }
+}
+
+.services{
+  .services-box{
+
+    @media #{$minMedium} {
+      float:$float-left;
+      width:(100%/3);
+      &:not(:last-of-type){
+        padding-right:20px;
+    }
+    }
+
+    @media #{$maxMobile}{
+      i{
+        display:block;
+        margin-bottom: 15px;
+      }
+    }
+    .services-title{
+      color:#666;
+      i{
+        font-size: 30px;
+      }
+    }
+    p{
+      color:#777;
+      line-height: 1.5;
+      text-transform: capitalize;
+    }
+    .link{
+      color:$redColor;
+      text-decoration: none;
+    }
+  }
+}
+
+//start players
+
+.players{
+  .player-box{
+    @media #{$minSmall} {
+      width:(100%/2);
+      text-align: center;
+      float:$float-left;
+      margin-bottom: 40px;
+    }
+
+    @media #{$minMedium} {
+      width:(100%/3);
+      text-align: $text-left;
+      float:$float-left;
+
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+
+    @media #{$minLarge} {
+      width:(100%/5);
+
+    }
+
+    @media #{$maxMobile} {
+
+      margin-bottom: 40px;
+    }
+    img{
+      max-width: 100%;
+    }
+    .player-title{
+      color:#666;
+      font-weight: normal;
+      span{
+       font-weight: bold;
+      }
+    }
+    p{
+      color:#777;
+      line-height: 1.5;
+      text-transform: capitalize;
+    }
+    .link{
+      color:$redColor;
+      text-decoration: none;
+    }
+  }
+}
+
+
+
+.lorem{
+  .lorem-box{
+    @media #{$minSmall} {
+      float:$float-left;
+      width:(94% / 3);
+      &:not(:last-of-type) {
+        margin-right: 3%;
+      }}
+
+        @media #{$maxMobile} {
+          width:100%;
+          float:none;
+          margin-bottom: 20px;
+        }
+
+
+
+
+
+    img{
+      max-width: 100%;
+    }
+
+
+  }
+}
